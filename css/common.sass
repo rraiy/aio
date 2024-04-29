@@ -1,0 +1,470 @@
+@charset "utf-8"
+@import "var.sass"
+
+*
+	margin: 0
+	padding: 0
+	color: #262525
+	// font-family: source-han-sans-traditional, sans-serif
+	font-style: normal
+	font-weight: 400
+	font-family: 'Noto Sans TC', sans-serif
+*:focus
+	outline: none
+a
+	text-decoration: none
+	color: inherit
+a:focus
+	-moz-outline-style: none
+	outline: none
+a img
+	border: none
+ul,li
+	list-style-type: none
+input
+	border: none
+	outline: none
+.clear
+	clear: both
+
+.gotop
+	width: 105px
+	height: 105px
+	background-image: url(../images/gotop.png)
+	background-position: center center
+	background-repeat: no-repeat
+	position: fixed
+	box-sizing: border-box
+	cursor: pointer
+	right: 45px
+	bottom: 120px
+	z-index: 5
+	cursor: pointer
+	+rwd3()
+		width: 60px
+		height: 60px
+		background-size: 50px
+		bottom: 20px
+	+rwd(1400px)
+		width: 80px
+		height: 80px
+		background-size: 80px
+	+rwd(750px)
+		width: 50px
+		height: 50px
+		background-size: 50px
+		right: 10px
+		z-index: 6
+		// display: none
+
+header, footer, article
+	display: none
+
+header
+	position: absolute
+	z-index: 6
+	width: 100%
+	height: 57px
+	background-color: $blue
+	+rwd(1100px)
+		height: 60px
+	+rwd(750px)
+		position: fixed
+	.inner
+		position: relative
+		width: 1350px
+		margin: 0 auto
+		+rwd(1400px)
+			width: 100%
+		&::after
+			content: ""
+			clear: both
+			display: block
+		.logo
+			float: left
+			margin-left: 25px
+			position: relative
+			z-index: 12
+			+rwd(1100px)
+				margin-left: 20px
+			figure
+				width: 131px
+				+rwd(1100px)
+					width: 70px
+				img
+					width: 100%
+		.ham
+			position: absolute
+			z-index: 20
+			right: 25px
+			top: 18px
+			width: 30px
+			height: 30px
+			cursor: pointer
+			background-image: url(../images/ham.png)
+			background-repeat: no-repeat
+			background-size: contain
+			display: none
+			&.active
+				background-image: url(../images/ham_close.png)
+			+rwd(1100px)
+				display: block
+		nav
+			float: right
+			margin-top: 5px
+			position: relative
+			z-index: 11
+			+rwd(1100px)
+				float: none
+				margin-top: 0
+				background-color: rgba(33,62,89,.9)
+				width: 100%
+				height: 100vh
+				text-align: center
+				// display: none
+				position: fixed
+				left: 0
+				top: 0
+			ul
+				display: inline-block
+				vertical-align: middle
+				+rwd(1100px)
+					width: 180px
+					display: block
+					margin: 0 auto
+					padding-top: 95px
+				+rwd(376px)
+					padding-top: 85px
+				li
+					display: inline-block
+					vertical-align: middle
+					margin: 0 25px
+					cursor: pointer
+					position: relative
+					+rwd(1400px)
+						margin: 0 15px
+					+rwd(1100px)
+						display: block
+						margin: 0 0 20px
+					+rwd(376px)
+						display: block
+						margin: 0 0 20px
+					p,a
+						font-size: 18px
+						color: rgba(255,255,255,0.5)
+						transition: .5s
+						+rwd(1100px)
+							font-size: 16px
+							color: #FFF
+					&.museum
+						display: none
+					&:after
+						content: ""
+						width: 0%
+						height: 7px
+						background-color: $red
+						position: absolute
+						bottom: -18px
+						left: 50%
+						transform: translate(-50%,0)
+						transition: .5s
+						padding: 0px
+						+rwd(1100px)
+							bottom: -5px
+							height: 2px
+							background-color: #fff
+					+rwd2()
+						&:hover
+							p,a
+								color: rgba(255,255,255,1)
+								+rwd(1100px)
+									color: #FFF
+							&:after
+								padding: 0 15px
+								width: 100%
+								+rwd(1100px)
+									width: 90%
+			.social
+				display: inline-block
+				vertical-align: middle
+				margin-top: 5px
+				+rwd(1100px)
+					display: block
+					width: 180px
+					margin: 0 auto
+				a
+					display: inline-block
+					vertical-align: middle
+					margin: 0 7px
+					width: 34px
+					height: 34px
+					border-radius: 100%
+					background-color: #264062
+					border: solid 1px #264062
+					background-repeat: no-repeat
+					background-position: center center
+					transition: .5s
+					+rwd(1100px)
+						margin: 0 12px
+					&.fb
+						background-image: url(../images/icon_fb.png)
+					&.ig
+						background-image: url(../images/icon_ig.png)
+					&.cart
+						background-image: url(../images/icon_cart.png)
+						background-color: $red
+						border: solid 1px $red
+					+rwd2()
+						&:hover
+							background-color: #FFF
+							&.fb
+								background-image: url(../images/icon_fb_h.png)
+							&.ig
+								background-image: url(../images/icon_ig_h.png)
+							&.cart
+								background-image: url(../images/icon_cart_h.png)
+			a.museum
+				display: inline-block
+				vertical-align: middle
+				margin-right: 60px
+				font-size: 18px
+				color: rgba(255,255,255,0.5)
+				margin-left: 25px
+				background-color: transparent
+				float: right
+				margin-top: 8px
+				position: relative
+				transition: .5s
+				&:after
+					content: ""
+					width: 0%
+					height: 7px
+					background-color: $red
+					position: absolute
+					bottom: -18px
+					left: 50%
+					transform: translate(-50%,0)
+					transition: .5s
+					padding: 0px
+					+rwd(1100px)
+						bottom: -5px
+						height: 2px
+						background-color: #fff
+				+rwd2()
+					&:hover
+						color: rgba(255,255,255,1)
+						+rwd(1100px)
+							color: #FFF
+						&:after
+							padding: 0 15px
+							width: 100%
+							+rwd(1100px)
+								width: 90%
+				+rwd(1100px)
+					display: block
+					font-size: 16px
+					color: #FFF
+					margin-top: 0
+					margin-left: auto
+					margin-right: auto
+					margin-bottom: 35px
+					float: none
+					width: 180px
+
+footer
+	background-color: $blue
+	text-align: center
+	width: 100%
+	padding: 25px 0
+	position: relative
+	z-index: 5
+	+rwd(500px)
+		padding: 15px 0
+	p
+		display: inline-block
+		margin: 0 18px
+		vertical-align: top
+		letter-spacing: 1px
+		+rwd(1100px)
+			margin: 0 10px 5px
+		+rwd(500px)
+			margin: 0 10px 0px
+		a
+			color: #FFF
+			font-size: 18px
+			font-weight: 300
+			+rwd(1100px)
+				font-size: 16px
+			+rwd(500px)
+				font-size: 14px
+
+#loading
+	position: fixed
+	width: 100%
+	height: 100vh
+	background-image: url(../images/loading_bg.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center top
+	z-index: 100
+	top: 0
+	left: 0
+	// display: none
+	.b
+		background-image: url(../images/loading_img02.png)
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center center
+		position: absolute
+		bottom: 0
+		left: 50%
+		width: 110%
+		height: 540px
+		margin-left: -55%
+		+rwd(1920px)
+			background-size: contain
+			width: 1980px
+			margin-left: -990px
+			height: 480px
+		+rwd3()
+			width: 1500px
+			margin-left: -750px
+			height: 350px
+		+rwd(1000px)
+			width: 1200px
+			margin-left: -600px
+			height: 290px
+		+rwd(750px)
+			background-image: url(../images/loading_img02_m.png)
+			width: 807px
+			margin-left: -403px
+			height: 527px
+		+rwd(500px)
+			width: 500px
+			margin-left: -250px
+			height: 310px
+			border-bottom: 10px solid #fff
+	.main
+		position: absolute
+		top: 50%
+		left: 50%
+		width: 641px
+		margin-left: -320px
+		margin-top: -400px
+		+rwd3()
+			width: 450px
+			margin-left: -225px
+			margin-top: -270px
+		+rwd(1000px)
+			width: 450px
+			margin-left: -225px
+			margin-top: -250px
+		+rwd(750px)
+			width: 300px
+			margin-left: -150px
+		.txt
+			width: 641px
+			margin: 0 auto 35px
+			+rwd3()
+				width: 450px
+			+rwd(1000px)
+				width: 450px
+			+rwd(750px)
+				width: 300px
+				margin: 0 auto 15px
+			img
+				width: 100%
+		.num_box
+			width: 500px
+			height: 30px
+			box-sizing: border-box
+			background-color: #FFF
+			border-radius: 30px
+			margin: 0px auto
+			position: relative
+			+rwd3()
+				width: 400px
+			+rwd(1000px)
+				width: 400px
+			+rwd(750px)
+				width: 235px
+				height: 20px
+			.num
+				width: 100%
+				height: 100%
+				border-radius: 42px
+				overflow: hidden
+				position: relative
+				span
+					position: absolute
+					width: 758px
+					height: 340px
+					left: -200%
+					top: -170px
+					background-image: url(../images/loading_img03.png)
+
+.video_pp
+	position: fixed
+	z-index: 100
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,0.6)
+	display: none
+	.main
+		text-align: center
+		position: relative
+		z-index: 3
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		+rwd(1300px)
+			width: calc(100% - 40px)
+		+rwd3()
+			width: 550px
+		+rwd(500px)
+			width: calc(100% - 40px)
+			padding: 15px 0 30px
+		&::after
+			content: ""
+			display: block
+			position: absolute
+			width: calc(100% - 15px)
+			height: calc(100% - 15px)
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+		.xx
+			position: absolute
+			z-index: 101
+			right: -15px
+			top: -15px
+			width: 37px
+			height: 43px
+			background-repeat: no-repeat
+			background-image: url(../images/close.png)
+			background-size: contain
+			cursor: pointer
+			+rwd(1300px)
+				right: 0px
+			+rwd(500px)
+				right: 5px
+				top: 5px
+				width: 25px
+		iframe
+			width: 1193px
+			height: 665px
+			position: relative
+			z-index: 100
+			+rwd(1300px)
+				width: calc(100% - 40px)
+				max-width: 100%
+				margin: 0 auto
+			+rwd3()
+				width: 500px
+				height: 300px
+			+rwd(500px)
+				width: calc(100% - 40px)
+				height: 200px
