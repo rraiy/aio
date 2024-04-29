@@ -98,8 +98,6 @@ var preloadImages = [
     "images/video_bg_top.png",
     "images/video_i01.png",
     "images/video_i02.png",
-    "images/video_img01.png",
-    "images/video_img02.png"
 ];
 queue.on("complete", function (event) {
     sessionStorage.setItem('isLoad', 1);
@@ -449,10 +447,6 @@ function windowScrollIndex(){
     if(winScroll>=$('section#about').offset().top-winHeight*0.8 && is_act01==false){
         is_act01=true;
         act02();
-    }
-    if(winScroll>=$('section#video .video01').offset().top-winHeight*0.8 && is_act02==false){
-        is_act02=true;
-        act03();
     }
     if(winScroll>=$('section#product').offset().top-winHeight*0.8 && is_act03==false){
         is_act03=true;
