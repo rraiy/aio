@@ -46,8 +46,7 @@ input {
   background-position: center center;
   background-repeat: no-repeat;
   position: fixed;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   cursor: pointer;
   right: 45px;
   bottom: 120px;
@@ -172,6 +171,7 @@ header .inner nav {
     width: 100%;
     height: 100vh;
     text-align: center;
+    display: none;
     position: fixed;
     left: 0;
     top: 0;
@@ -221,7 +221,6 @@ header .inner nav ul li {
 header .inner nav ul li p, header .inner nav ul li a {
   font-size: 18px;
   color: rgba(255, 255, 255, 0.5);
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 @media only screen and (max-width: 1100px) {
@@ -241,9 +240,7 @@ header .inner nav ul li:after {
   position: absolute;
   bottom: -18px;
   left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  -webkit-transition: 0.5s;
+  transform: translate(-50%, 0);
   transition: 0.5s;
   padding: 0px;
 }
@@ -256,7 +253,7 @@ header .inner nav ul li:after {
 }
 @media only screen and (min-width: 751px) {
   header .inner nav ul li:hover p, header .inner nav ul li:hover a {
-    color: rgb(255, 255, 255);
+    color: white;
   }
 }
 @media only screen and (min-width: 751px) and (max-width: 1100px) {
@@ -298,7 +295,6 @@ header .inner nav .social a {
   border: solid 1px #264062;
   background-repeat: no-repeat;
   background-position: center center;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 @media only screen and (max-width: 1100px) {
@@ -342,7 +338,6 @@ header .inner nav a.museum {
   float: right;
   margin-top: 8px;
   position: relative;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 header .inner nav a.museum:after {
@@ -353,9 +348,7 @@ header .inner nav a.museum:after {
   position: absolute;
   bottom: -18px;
   left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  -webkit-transition: 0.5s;
+  transform: translate(-50%, 0);
   transition: 0.5s;
   padding: 0px;
 }
@@ -368,7 +361,7 @@ header .inner nav a.museum:after {
 }
 @media only screen and (min-width: 751px) {
   header .inner nav a.museum:hover {
-    color: rgb(255, 255, 255);
+    color: white;
   }
 }
 @media only screen and (min-width: 751px) and (max-width: 1100px) {
@@ -562,8 +555,7 @@ footer p a {
 #loading .main .num_box {
   width: 500px;
   height: 30px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #FFF;
   border-radius: 30px;
   margin: 0px auto;
@@ -618,8 +610,7 @@ footer p a {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 @media only screen and (max-width: 1300px) {
   .video_pp .main {
@@ -645,8 +636,7 @@ footer p a {
   height: calc(100% - 15px);
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .video_pp .main .xx {
   position: absolute;
@@ -696,4 +686,6 @@ footer p a {
     width: calc(100% - 40px);
     height: 200px;
   }
-}/*# sourceMappingURL=common.css.map */
+}
+
+/*# sourceMappingURL=common.css.map */

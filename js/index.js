@@ -376,23 +376,23 @@ function hamClick(){
 var is_menu=false;
 var is_ti=false;
 function indexResize(){
-    if($(window).width()<=1083 && is_menu==false){
-		is_menu=true;
+    if($(window).width()<=1100){
+		// is_menu=true;
 		$('header .ham').show().removeClass('active');
-		$('header nav').hide();
+		// $('header nav').hide();
 	}
-	if($(window).width()>1083 && is_menu==true){
-        is_menu=false;
-		$('header .ham').hide();
-		$('header nav').show();
-    }
+	// if($(window).width()>1083 && is_menu==true){
+    //     is_menu=false;
+	// 	$('header .ham').hide();
+	// 	$('header nav').show();
+    // }
 }
 
 
 var menu_index=0;
 function MenuLiClick(){
     menu_index=$(this).index();
-    if($(window).width()<=1083){
+    if($(window).width()<=1100){
 		$('header .ham').removeClass('active');
 		$('header nav').fadeOut(500);
 	}
