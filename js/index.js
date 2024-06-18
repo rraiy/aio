@@ -41,9 +41,9 @@ var preloadImages = [
     "images/kv_bg.png",
     "images/kv_img00.png",
     "images/kv_img01.png",
-    "images/kv_img01-1.png",
-    "images/kv_img01-2.png",
-    "images/kv_img01-3.png",
+    "images/kv_img02-1.png",
+    "images/kv_img02-2.png",
+    "images/kv_img02-3.png",
     "images/kv_img02.png",
     "images/kv_mask.png",
     "images/kv_mask_m.png",
@@ -312,13 +312,13 @@ function indexInit(){
 function set00(){
     TweenMax.set('section#kv .img00',{y:50,opacity:0});
     TweenMax.set('section#kv .img01',{x:-50,opacity:0});
-    TweenMax.set('section#kv .img01-1',{x:-50,opacity:0});
-    TweenMax.set('section#kv .img01-3',{x:-50,opacity:0});
+    TweenMax.set('section#kv .img02-1',{y:-200,opacity:0});
+    TweenMax.set('section#kv .img02-3',{x:-50,opacity:0});
     TweenMax.set('section#kv .img02',{x:50,opacity:0});
     if($(window).width()<=1383){
-        TweenMax.set('section#kv .img01-2',{x:-400,y:-400,rotation:-60,opacity:0.5});
+        TweenMax.set('section#kv .img02-2',{x:-400,y:-400,rotation:-60,opacity:0.5});
     }else{
-        TweenMax.set('section#kv .img01-2',{x:200,y:-400,rotation:30,opacity:0.5});
+        TweenMax.set('section#kv .img02-2',{x:400,y:-400,rotation:30,opacity:0.5});
     }
     
     
@@ -341,9 +341,9 @@ function set00(){
 function act01(){
     TweenMax.to('section#kv .img00',0.8,{y:0,opacity:1});
     TweenMax.to('section#kv .img01',0.8,{delay:0.8,x:0,opacity:1});
-    TweenMax.to('section#kv .img01-1',0.8,{delay:0.8,x:0,opacity:1});
-    TweenMax.to('section#kv .img01-2',0.8,{delay:1,x:0,y:0,rotation:0,opacity:1});
-    TweenMax.to('section#kv .img01-3',0.8,{delay:0.8,x:0,opacity:1});
+    TweenMax.to('section#kv .img02-1',0.8,{y:0,delay:0.8,x:0,opacity:1});
+    TweenMax.to('section#kv .img02-2',0.8,{delay:1,x:0,y:0,rotation:0,opacity:1});
+    TweenMax.to('section#kv .img02-3',0.8,{delay:0.8,x:0,opacity:1});
     TweenMax.to('section#kv .img02',0.8,{delay:0.8,x:0,opacity:1});
 }
 function act02(){
