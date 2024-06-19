@@ -1336,8 +1336,8 @@ section#product [class^=main] [class^=item_box] .items [class^=item] .i01 {
   position: absolute;
   z-index: 3;
   left: 50%;
-  top: -170px;
-  margin-left: -820px;
+  top: -130px;
+  margin-left: -840px;
 }
 @media only screen and (max-width: 1400px) {
   section#product [class^=main] [class^=item_box] .items [class^=item] .i01 {
@@ -1364,16 +1364,16 @@ section#product [class^=main] [class^=item_box] .items [class^=item] .i01 {
   }
 }
 section#product [class^=main] [class^=item_box] .items [class^=item] .i02 {
-  width: 1667px;
-  height: 941px;
+  width: 1800px;
+  height: 1016px;
   background-image: url(../images/product_i02.png);
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
   z-index: 3;
   left: 50%;
-  top: -215px;
-  margin-left: -790px;
+  top: -264px;
+  margin-left: -812px;
 }
 @media only screen and (max-width: 1400px) {
   section#product [class^=main] [class^=item_box] .items [class^=item] .i02 {
@@ -1405,8 +1405,8 @@ section#product [class^=main] [class^=item_box] .items [class^=item] .bg {
   background-size: contain;
   width: 948px;
   height: 589px;
-  left: 280px;
-  top: -70px;
+  left: 208px;
+  top: -48px;
 }
 @media only screen and (max-width: 1400px) {
   section#product [class^=main] [class^=item_box] .items [class^=item] .bg {
@@ -1481,7 +1481,8 @@ section#product [class^=main] [class^=item_box] .items [class^=item] .img {
   float: left;
   position: relative;
   z-index: 4;
-  margin-left: 140px;
+  margin-top: 52px;
+  margin-left: 88px;
   width: 400px;
 }
 @media only screen and (max-width: 1400px) {
@@ -1553,7 +1554,7 @@ section#product [class^=main] [class^=item_box] .items [class^=item] .info_box {
   position: relative;
   box-sizing: border-box;
   width: calc(100% - 550px);
-  padding-top: 10px;
+  padding-top: 44px;
   padding-right: 260px;
   z-index: 4;
 }
@@ -1889,7 +1890,7 @@ section#product [class^=main] [class^=item_box] .dots [class^=dot].active.dot01 
   border: solid #36a5cf;
   border-width: 0px 3px 3px 0;
 }
-section#product [class^=main] [class^=item_box] .dots [class^=dot].active.dot02 .img .product02 {
+section#product [class^=main] [class^=item_box] .dots [class^=dot].active.dot02 .img img {
   position: relative;
   top: -20px;
 }
@@ -1923,7 +1924,7 @@ section#product [class^=main] [class^=item_box] .dots [class^=dot].active.dot03 
   border: solid #e94e86;
   border-width: 0px 3px 3px 0;
 }
-section#product [class^=main] [class^=item_box] .dots [class^=dot].active.dot04 .img img {
+section#product [class^=main] [class^=item_box] .dots [class^=dot].active.dot04 .img .product04 {
   position: relative;
   top: -20px;
 }
@@ -2014,7 +2015,7 @@ section#product [class^=main].main02 .item_box .items [class^=item] .img {
   float: right;
   margin-left: 0;
   margin-top: 60px;
-  margin-right: 60px;
+  margin-right: -16px;
 }
 @media only screen and (max-width: 1400px) {
   section#product [class^=main].main02 .item_box .items [class^=item] .img {
@@ -2025,8 +2026,8 @@ section#product [class^=main].main02 .item_box .items [class^=item] .img {
 section#product [class^=main].main02 .item_box .items [class^=item] .info_box {
   padding-right: 0;
   padding-left: 260px;
-  margin-left: 90px;
-  padding-top: 40px;
+  margin-left: 164px;
+  padding-top: 44px;
 }
 @media only screen and (max-width: 1400px) {
   section#product [class^=main].main02 .item_box .items [class^=item] .info_box {
