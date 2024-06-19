@@ -37,7 +37,7 @@ section#kv
         background-repeat: no-repeat
         background-position: center center
         background-size: cover
-        bottom: -32px
+        bottom: -16px
         left: 50%
         margin-left: -50%
         +rwd(1920px)
@@ -503,27 +503,27 @@ section#about
             margin-bottom: 20px
             +rwd(1100px)
                 margin-top: 20px
+                margin-bottom: 0px
             +rwd(750px)
                 width: 280px
             img
                 width: 100%
-        .img02
+        .product-step
             width: 839px
             height: 216px
-            background-image: url(../images/about_img04.png)
+            background-image: url(../images/about_product-step.png)
             background-repeat: no-repeat
             background-size: contain
             margin: 0 auto
             +rwd(1100px)
-                width: 580px
-                height: 502px
-                background-image: url(../images/about_img04_m.png)
+                width: 552px
+                height: 532px
+                background-image: url(../images/about_product-step-m.png)
             +rwd(750px)
-                width: 350px
-                height: 300px
+                width: 70%
+                max-width: 350px
             img
                 width: 100%
-
 section#product
     position: relative
     width: 100%
@@ -544,6 +544,27 @@ section#product
         background-position: center calc(100% - 80px)
         background-size: 900px
         padding-top: 176px
+    .character
+        width: 260px
+        height: 702px
+        background-image: url(../images/about_character.png)
+        background-repeat: no-repeat
+        background-size: contain
+        position: absolute
+        z-index: 10
+        top: -649px
+        left: 50%
+        margin-left: -676px
+        +rwd(1100px)
+            width: 190px
+            height: 525px
+            top: -485px
+            margin-left: -369px
+        +rwd(750px)
+            width: 128px
+            height: 350px
+            top: -616px
+            margin-left: -216px
     .bgu
         background-image: url(../images/video-bg-update.png)
         background-repeat: no-repeat

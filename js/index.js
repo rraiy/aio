@@ -12,8 +12,8 @@ var preloadImages = [
     "images/about_i01.png",
     "images/about_i02.png",
     "images/about_img01.png",
-    "images/about_img02.png",
-    "images/about_img02_m.png",
+    "images/about_product-step.png",
+    "images/about_product-step-m.png",
     "images/about_img03.png",
     "images/about_img04.png",
     "images/about_img04_m.png",
@@ -302,7 +302,7 @@ function indexInit(){
         $('section#product .main02 .dots .dot0'+mdot2).removeClass('active')
     })
 
-    //ani
+
     set00();
     act01();
 }
@@ -312,10 +312,11 @@ function indexInit(){
 function set00(){
     TweenMax.set('section#kv .img00',{y:50,opacity:0});
     TweenMax.set('section#kv .img01',{x:-50,opacity:0});
-    TweenMax.set('section#kv .img02-1',{y:-200,opacity:0});
+    TweenMax.set('section#kv .img02-1',{y:200,opacity:0});
     TweenMax.set('section#kv .img02-3',{x:-50,opacity:0});
     TweenMax.set('section#kv .img02',{x:50,opacity:0});
-    if($(window).width()<=1383){
+    
+    if($(window).width()<=1400){
         TweenMax.set('section#kv .img02-2',{x:-400,y:-400,rotation:-60,opacity:0.5});
     }else{
         TweenMax.set('section#kv .img02-2',{x:400,y:-400,rotation:30,opacity:0.5});
@@ -326,7 +327,7 @@ function set00(){
     TweenMax.set('section#about .inner .info_box .info01',{y:50,opacity:0});
     TweenMax.set('section#about .inner .info_box .info02',{y:50,opacity:0});
     TweenMax.set('section#about .inner .title02',{y:50,opacity:0});
-    TweenMax.set('section#about .inner .img02',{y:50,opacity:0});
+    TweenMax.set('section#about .inner .product-step',{y:50,opacity:0});
     TweenMax.set('section#about .i01',{x:100,opacity:0});
     TweenMax.set('section#about .i02',{x:-100,opacity:0});
 
@@ -339,19 +340,20 @@ function set00(){
 }
 
 function act01(){
-    TweenMax.to('section#kv .img00',0.8,{y:0,opacity:1});
-    TweenMax.to('section#kv .img01',0.8,{delay:0.8,x:0,opacity:1});
-    TweenMax.to('section#kv .img02-1',0.8,{y:0,delay:0.8,x:0,opacity:1});
-    TweenMax.to('section#kv .img02-2',0.8,{delay:1,x:0,y:0,rotation:0,opacity:1});
-    TweenMax.to('section#kv .img02-3',0.8,{delay:0.8,x:0,opacity:1});
-    TweenMax.to('section#kv .img02',0.8,{delay:0.8,x:0,opacity:1});
+    TweenMax.to('section#kv .img00',0.6,{y:0,opacity:1});
+    TweenMax.to('section#kv .img01',0.8,{delay:0.2,x:0,opacity:1});
+    TweenMax.to('section#kv .img02',0.8,{delay:0.2,x:0,opacity:1});
+    TweenMax.to('section#kv .img02-3',0.6,{delay:1,x:0,opacity:1});
+    TweenMax.to('section#kv .img02-2',0.6,{delay:1.6,x:0,y:0,rotation:0,opacity:1});
+    TweenMax.to('section#kv .img02-1',0.6,{delay: 2.2, y:0,opacity:1});
+
 }
 function act02(){
     TweenMax.to('section#about .inner .title',0.8,{y:0,opacity:1});
     TweenMax.to('section#about .inner .info_box .info01',0.8,{delay:0.8,y:0,opacity:1});
     TweenMax.to('section#about .inner .info_box .info02',0.8,{delay:0.8,y:0,opacity:1});
     TweenMax.to('section#about .inner .title02',0.8,{delay:1.5,y:0,opacity:1});
-    TweenMax.to('section#about .inner .img02',0.8,{delay:1.8,y:0,opacity:1});
+    TweenMax.to('section#about .inner .product-step',0.8,{delay:1.8,y:0,opacity:1});
     TweenMax.to('section#about .i01',0.8,{delay:1.2,x:0,opacity:1});
     TweenMax.to('section#about .i02',0.8,{delay:1.2,x:0,opacity:1});
 }

@@ -47,7 +47,7 @@ section#kv .bgb {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  bottom: -32px;
+  bottom: -16px;
   left: 50%;
   margin-left: -50%;
 }
@@ -723,6 +723,7 @@ section#about .inner .title02 {
 @media only screen and (max-width: 1100px) {
   section#about .inner .title02 {
     margin-top: 20px;
+    margin-bottom: 0px;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -733,28 +734,28 @@ section#about .inner .title02 {
 section#about .inner .title02 img {
   width: 100%;
 }
-section#about .inner .img02 {
+section#about .inner .product-step {
   width: 839px;
   height: 216px;
-  background-image: url(../images/about_img04.png);
+  background-image: url(../images/about_product-step.png);
   background-repeat: no-repeat;
   background-size: contain;
   margin: 0 auto;
 }
 @media only screen and (max-width: 1100px) {
-  section#about .inner .img02 {
-    width: 580px;
-    height: 502px;
-    background-image: url(../images/about_img04_m.png);
+  section#about .inner .product-step {
+    width: 552px;
+    height: 532px;
+    background-image: url(../images/about_product-step-m.png);
   }
 }
 @media only screen and (max-width: 750px) {
-  section#about .inner .img02 {
-    width: 350px;
-    height: 300px;
+  section#about .inner .product-step {
+    width: 70%;
+    max-width: 350px;
   }
 }
-section#about .inner .img02 img {
+section#about .inner .product-step img {
   width: 100%;
 }
 
@@ -786,6 +787,34 @@ section#product {
     background-position: center calc(100% - 80px);
     background-size: 900px;
     padding-top: 176px;
+  }
+}
+section#product .character {
+  width: 260px;
+  height: 702px;
+  background-image: url(../images/about_character.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: 10;
+  top: -649px;
+  left: 50%;
+  margin-left: -676px;
+}
+@media only screen and (max-width: 1100px) {
+  section#product .character {
+    width: 190px;
+    height: 525px;
+    top: -485px;
+    margin-left: -369px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  section#product .character {
+    width: 128px;
+    height: 350px;
+    top: -616px;
+    margin-left: -216px;
   }
 }
 section#product .bgu {
