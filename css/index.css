@@ -1524,30 +1524,11 @@ section#product [class^=main] [class^=item_box] .items [class^=item] .img .produ
   height: 96px;
   background: url(../images/new.png) no-repeat center/contain;
 }
-section#product [class^=main] [class^=item_box] .items [class^=item] .img .product05 {
-  margin: 10px 0 10px 15px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top;
-  width: 346px;
-  height: 463px;
-  position: relative;
-}
-section#product [class^=main] [class^=item_box] .items [class^=item] .img .product05::after {
-  content: "";
-  position: absolute;
-  top: -40px;
-  left: -20px;
-  width: 102px;
-  height: 96px;
-  background: url(../images/new.png) no-repeat center/contain;
-}
 section#product [class^=main] [class^=item_box] .items [class^=item] .img .shadow {
   width: 331px;
   height: 28px;
   background-image: url(../images/product_shadow.png);
   background-repeat: no-repeat;
-  margin-top: -50px;
 }
 section#product [class^=main] [class^=item_box] .items [class^=item] .info_box {
   float: left;
@@ -1831,24 +1812,6 @@ section#product [class^=main] [class^=item_box] .dots [class^=dot].dot04 .name .
 section#product [class^=main] [class^=item_box] .dots [class^=dot].dot05 .bg {
   background-image: url(../images/product_dot05.png);
 }
-section#product [class^=main] [class^=item_box] .dots [class^=dot].dot05 .img .product05 {
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top;
-  width: 195.2px;
-  height: 245px;
-  position: relative;
-}
-section#product [class^=main] [class^=item_box] .dots [class^=dot].dot05 .img .product05::after {
-  content: "";
-  position: absolute;
-  bottom: -23.6px;
-  right: -28px;
-  width: 94px;
-  height: 89px;
-  background: url(../images/new.png) no-repeat center/contain;
-  transform: rotate(45deg);
-}
 section#product [class^=main] [class^=item_box] .dots [class^=dot].dot05 .name p {
   color: #d6007b;
 }
@@ -1941,7 +1904,7 @@ section#product [class^=main] [class^=item_box] .dots [class^=dot].active.dot04 
   border: solid #e60012;
   border-width: 0px 3px 3px 0;
 }
-section#product [class^=main] [class^=item_box] .dots [class^=dot].active.dot05 .img .product05 {
+section#product [class^=main] [class^=item_box] .dots [class^=dot].active.dot05 .img img {
   position: relative;
   top: -20px;
 }
