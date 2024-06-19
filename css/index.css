@@ -1324,6 +1324,12 @@ section#product [class^=main] [class^=item_box] .items [class^=item]::after {
   display: block;
   clear: both;
 }
+section#product [class^=main] [class^=item_box] .items [class^=item] .main-character {
+  position: absolute;
+  background-image: url(../images/product_main01_character.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 section#product [class^=main] [class^=item_box] .items [class^=item] .i01 {
   width: 1574px;
   height: 710px;
@@ -1628,7 +1634,7 @@ section#product [class^=main] [class^=item_box] .items [class^=item] .info_box .
   position: relative;
   display: inline-block;
   vertical-align: top;
-  width: 500px;
+  width: 580px;
   margin-top: 20px;
 }
 @media only screen and (max-width: 1400px) {
@@ -1647,7 +1653,7 @@ section#product [class^=main] [class^=item_box] .items [class^=item] .info_box .
   background-color: #fff;
   position: relative;
   box-sizing: border-box;
-  width: 200px;
+  width: 160px;
   height: 40px;
   display: inline-block;
   margin-right: 20px;
@@ -1673,11 +1679,6 @@ section#product [class^=main] [class^=item_box] .items [class^=item] .info_box .
   left: 50%;
   transform: translate(-60%, -50%);
   width: 100%;
-}
-section#product [class^=main] [class^=item_box] .main-character {
-  background-image: url(../images/product_main01_character.png);
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 section#product [class^=main] [class^=item_box] .dots {
   text-align: center;
