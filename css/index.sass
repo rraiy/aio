@@ -666,7 +666,7 @@ section#product
     background-size: 1920px
     background-image: url(../images/footer_bg.png)
     background-repeat: no-repeat
-    background-position: center calc(100% - 160px)
+    background-position: center 100px
     background-size: cover
     z-index: 4
     +rwd(1200px)
@@ -773,7 +773,15 @@ section#product
             height: 65px
             right: -80px
             bottom: 50px
-
+    .guarantee
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding-bottom: 600px
+        +rwd(1000px)
+        .title 
+            margin-bottom: 24px
     [class^="main"]
         width: 1350px
         margin: 0 auto
@@ -786,6 +794,8 @@ section#product
             margin-top: -108px
         +rwd(750px)
             margin-top: -48px
+            padding-bottom: 80px
+
         .title
             width: 327px
             margin: 0 auto
@@ -882,7 +892,7 @@ section#product
                 background-size: contain
                 display: none
                 +rwd(750px)
-                    margin-top: -30px
+                    margin-top: -12px
                 
         [class^="item_box"]
             position: relative
@@ -1122,8 +1132,6 @@ section#product
                             margin-top: 20px
                             +rwd(1400px)
                                 width: 100%
-                            +rwd(1000px)
-                                text-align: center
                             a
                                 text-align: center
                                 border-radius: 50px
@@ -1146,6 +1154,8 @@ section#product
                                     margin-bottom: 10px
                                     width: calc(50% - 25px)
                                     max-width: 200px
+                                +rwd(750px)
+                                    height: 36px
                                 img
                                     position: absolute
                                     top: 50%
@@ -1410,7 +1420,7 @@ section#product
         
         &.main02
             margin-top: 0
-            padding-bottom: 600px
+            padding-bottom: 100px
             +rwd(750px)
                 padding-bottom: 350px
             .item_box .items [class^="item"]

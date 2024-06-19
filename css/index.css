@@ -958,7 +958,7 @@ section#product {
   background-size: 1920px;
   background-image: url(../images/footer_bg.png);
   background-repeat: no-repeat;
-  background-position: center calc(100% - 160px);
+  background-position: center 100px;
   background-size: cover;
   z-index: 4;
 }
@@ -1116,6 +1116,16 @@ section#product .i05 {
     bottom: 50px;
   }
 }
+section#product .guarantee {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 600px;
+}
+section#product .guarantee .title {
+  margin-bottom: 24px;
+}
 section#product [class^=main] {
   width: 1350px;
   margin: 0 auto;
@@ -1136,6 +1146,7 @@ section#product [class^=main] {
 @media only screen and (max-width: 750px) {
   section#product [class^=main] {
     margin-top: -48px;
+    padding-bottom: 80px;
   }
 }
 section#product [class^=main] .title {
@@ -1275,7 +1286,7 @@ section#product [class^=main] .m_dot_box .shadow {
 }
 @media only screen and (max-width: 750px) {
   section#product [class^=main] .m_dot_box .shadow {
-    margin-top: -30px;
+    margin-top: -12px;
   }
 }
 section#product [class^=main] [class^=item_box] {
@@ -1621,11 +1632,6 @@ section#product [class^=main] [class^=item_box] .items [class^=item] .info_box .
     width: 100%;
   }
 }
-@media only screen and (max-width: 1000px) {
-  section#product [class^=main] [class^=item_box] .items [class^=item] .info_box .links {
-    text-align: center;
-  }
-}
 section#product [class^=main] [class^=item_box] .items [class^=item] .info_box .links a {
   text-align: center;
   border-radius: 50px;
@@ -1650,6 +1656,11 @@ section#product [class^=main] [class^=item_box] .items [class^=item] .info_box .
     margin-bottom: 10px;
     width: calc(50% - 25px);
     max-width: 200px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  section#product [class^=main] [class^=item_box] .items [class^=item] .info_box .links a {
+    height: 36px;
   }
 }
 section#product [class^=main] [class^=item_box] .items [class^=item] .info_box .links a img {
@@ -1957,7 +1968,7 @@ section#product [class^=main] [class^=item_box] .dots [class^=dot].active.dot07 
 }
 section#product [class^=main].main02 {
   margin-top: 0;
-  padding-bottom: 600px;
+  padding-bottom: 100px;
 }
 @media only screen and (max-width: 750px) {
   section#product [class^=main].main02 {
