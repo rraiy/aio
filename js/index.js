@@ -342,9 +342,9 @@ function set00(){
 
 function act01(){
     TweenMax.to('section#kv .img00',0.6,{y:0,opacity:1});
-    TweenMax.to('section#kv .img01',0.8,{delay:0.2,x:0,opacity:1});
-    TweenMax.to('section#kv .img02',0.8,{delay:0.2,x:0,opacity:1});
-    TweenMax.to('section#kv .img02-3',0.6,{delay:1,x:0,opacity:1});
+    TweenMax.to('section#kv .img01',0.6,{delay:0.4,x:0,opacity:1});
+    TweenMax.to('section#kv .img02',0.6,{delay:0.4,x:0,opacity:1});
+    TweenMax.to('section#kv .img02-3',0.6,{delay:1.0,x:0,opacity:1});
     TweenMax.to('section#kv .img02-2',0.6,{delay:1.6,x:0,y:0,rotation:0,opacity:1});
     TweenMax.to('section#kv .img02-1',0.6,{delay: 2.2, y:0,opacity:1});
 
