@@ -561,11 +561,6 @@ footer p a {
   margin: 0px auto;
   position: relative;
 }
-@media only screen and (max-height: 900px) {
-  #loading .main .num_box {
-    width: 400px;
-  }
-}
 @media only screen and (max-width: 1000px) {
   #loading .main .num_box {
     width: 400px;
@@ -590,7 +585,7 @@ footer p a {
   height: 340px;
   left: -200%;
   top: -170px;
-  background-image: url(../images/loading_img03.png);
+  background-image: url(../images/loading-blue.png);
 }
 
 .video_pp {
