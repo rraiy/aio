@@ -524,6 +524,142 @@ section#about
                 max-width: 350px
             img
                 width: 100%
+
+section#video
+    position: relative
+    width: 100%
+    z-index: 4
+    margin-top: -428px
+    +rwd(750px)
+        margin-top: -632px
+    .bgt
+        background-image: url(../images/video_bg_top.png)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center top
+        position: relative
+        top: 0
+        left: 50%
+        // width: 100%
+        // margin-left: -50%
+        width: 2560px
+        height: 640px
+        margin-left: -1280px
+        +rwd(1920px)
+            width: 1920px
+            height: 480px
+            margin-left: -960px
+        +rwd(1100px)
+            width: 1500px
+            height: 375px
+            margin-left: -750px
+            background-size: 1500px
+        +rwd(750px)
+            width: 800px
+            height: 200px
+            margin-left: -400px
+            background-size: 800px
+    .bgb
+        background-image: url(../images/video_bg_bottom.png)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center bottom
+        position: relative
+        bottom: 0
+        left: 50%
+        width: 2560px
+        margin-left: -1280px
+        height: 640px
+        +rwd(1920px)
+            width: 1920px
+            height: 412px
+            margin-left: -960px
+        +rwd(1100px)
+            width: 1300px
+            height: 325px
+            margin-left: -650px
+            background-size: 1300px
+        +rwd(750px)
+            width: 800px
+            height: 250px
+            margin-left: -400px
+            background-size: 800px
+    .i01,.i02
+        position: absolute
+        z-index: 5
+        background-size: contain
+        background-repeat: no-repeat
+    .i01
+        width: 84px
+        height: 88px
+        background-image: url(../images/video_i01.png)
+        left: 50%
+        top: 542px
+        margin-left: -521px
+        +rwd(1100px)
+            margin-left: -440px 
+    .i02
+        width: 187px
+        height: 346px
+        background-image: url(../images/video_i02.png)
+        left: 50%
+        bottom: 400px
+        margin-left: 500px
+        +rwd(1100px)
+            margin-left: 356px
+            bottom: 214px
+    .inner
+        background-image: url(../images/video_bg.png)
+        background-repeat: repeat-y
+        background-position: center top
+        text-align: center
+        position: relative
+        z-index: 4
+        background-size: cover
+        +rwd(1920px)
+            background-size: auto
+        +rwd(1000px)
+            padding-top: 20px
+            margin-bottom: -50px
+            box-sizing: border-box
+            padding-left: 20px
+            padding-right: 20px
+        .video01
+            display: inline-block
+            vertical-align: top
+            cursor: pointer
+            .img
+                width: 606px
+                margin-bottom: 20px
+                position: relative
+                +rwd(1400px)
+                    width: 420px
+                +rwd(1000px)
+                    width: 100%
+                img
+                    width: 100%
+                .play
+                    position: absolute
+                    background-image: url(../images/play.png)
+                    background-repeat: no-repeat
+                    width: 69px
+                    height: 72px
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%,-50%)
+            p
+                font-size: 30px
+                font-weight: bold
+                color: #545454
+                text-align: center
+                +rwd(1400px)
+                    font-size: 26px
+                +rwd(1000px)
+                    font-size: 30px
+                +rwd(750px)
+                    font-size: 20px
+    
+
 section#product
     position: relative
     width: 100%
@@ -564,28 +700,9 @@ section#product
             width: 128px
             height: 350px
             top: -616px
-            margin-left: -216px
-    .bgu
-        background-image: url(../images/video-bg-update.png)
-        background-repeat: no-repeat
-        background-size: cover
-        background-position: center top
-        position: absolute
-        top: -288px
-        left: 50%
-        width: 1920px
-        height: 816px
-        transform: translate(-50%, 0)
-        +rwd(1100px)
-            width: 1100px
-            background-size: 1500px
-        +rwd(1000px)
-            top: -200px
-        +rwd(750px)
-            background-image: url(../images/video-bg-update-mb.png)
-            width: 100%
-            background-size: 100%
-            top: -168px
+            margin-left: -252px
+        +rwd(500px)
+            margin-left: -204px
     .i03,.i04,.i05
         position: absolute
         z-index: 2
@@ -661,15 +778,15 @@ section#product
     [class^="main"]
         width: 1350px
         margin: 0 auto
-        padding: 160px 0
+        margin-top: -200px
+        padding-bottom: 160px
         +rwd(1400px)
             width: 1000px
         +rwd(1100px)
             width: 100%
-            padding-bottom: 0
+            margin-top: -108px
         +rwd(750px)
-            padding: 0
-            padding-bottom: 20px
+            margin-top: -48px
         .title
             width: 327px
             margin: 0 auto
@@ -1308,6 +1425,7 @@ section#product
                                         border-width: 0px 3px 3px 0
         
         &.main02
+            margin-top: 0
             padding-bottom: 600px
             +rwd(750px)
                 padding-bottom: 350px

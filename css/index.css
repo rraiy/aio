@@ -759,6 +759,198 @@ section#about .inner .product-step img {
   width: 100%;
 }
 
+section#video {
+  position: relative;
+  width: 100%;
+  z-index: 4;
+  margin-top: -428px;
+}
+@media only screen and (max-width: 750px) {
+  section#video {
+    margin-top: -632px;
+  }
+}
+section#video .bgt {
+  background-image: url(../images/video_bg_top.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  top: 0;
+  left: 50%;
+  width: 2560px;
+  height: 640px;
+  margin-left: -1280px;
+}
+@media only screen and (max-width: 1920px) {
+  section#video .bgt {
+    width: 1920px;
+    height: 480px;
+    margin-left: -960px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  section#video .bgt {
+    width: 1500px;
+    height: 375px;
+    margin-left: -750px;
+    background-size: 1500px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  section#video .bgt {
+    width: 800px;
+    height: 200px;
+    margin-left: -400px;
+    background-size: 800px;
+  }
+}
+section#video .bgb {
+  background-image: url(../images/video_bg_bottom.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  width: 2560px;
+  margin-left: -1280px;
+  height: 640px;
+}
+@media only screen and (max-width: 1920px) {
+  section#video .bgb {
+    width: 1920px;
+    height: 412px;
+    margin-left: -960px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  section#video .bgb {
+    width: 1300px;
+    height: 325px;
+    margin-left: -650px;
+    background-size: 1300px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  section#video .bgb {
+    width: 800px;
+    height: 250px;
+    margin-left: -400px;
+    background-size: 800px;
+  }
+}
+section#video .i01, section#video .i02 {
+  position: absolute;
+  z-index: 5;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+section#video .i01 {
+  width: 84px;
+  height: 88px;
+  background-image: url(../images/video_i01.png);
+  left: 50%;
+  top: 542px;
+  margin-left: -521px;
+}
+@media only screen and (max-width: 1100px) {
+  section#video .i01 {
+    margin-left: -440px;
+  }
+}
+section#video .i02 {
+  width: 187px;
+  height: 346px;
+  background-image: url(../images/video_i02.png);
+  left: 50%;
+  bottom: 400px;
+  margin-left: 500px;
+}
+@media only screen and (max-width: 1100px) {
+  section#video .i02 {
+    margin-left: 356px;
+    bottom: 214px;
+  }
+}
+section#video .inner {
+  background-image: url(../images/video_bg.png);
+  background-repeat: repeat-y;
+  background-position: center top;
+  text-align: center;
+  position: relative;
+  z-index: 4;
+  background-size: cover;
+}
+@media only screen and (max-width: 1920px) {
+  section#video .inner {
+    background-size: auto;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  section#video .inner {
+    padding-top: 20px;
+    margin-bottom: -50px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+section#video .inner .video01 {
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+}
+section#video .inner .video01 .img {
+  width: 606px;
+  margin-bottom: 20px;
+  position: relative;
+}
+@media only screen and (max-width: 1400px) {
+  section#video .inner .video01 .img {
+    width: 420px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  section#video .inner .video01 .img {
+    width: 100%;
+  }
+}
+section#video .inner .video01 .img img {
+  width: 100%;
+}
+section#video .inner .video01 .img .play {
+  position: absolute;
+  background-image: url(../images/play.png);
+  background-repeat: no-repeat;
+  width: 69px;
+  height: 72px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section#video .inner .video01 p {
+  font-size: 30px;
+  font-weight: bold;
+  color: #545454;
+  text-align: center;
+}
+@media only screen and (max-width: 1400px) {
+  section#video .inner .video01 p {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  section#video .inner .video01 p {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  section#video .inner .video01 p {
+    font-size: 20px;
+  }
+}
+
 section#product {
   position: relative;
   width: 100%;
@@ -814,38 +1006,12 @@ section#product .character {
     width: 128px;
     height: 350px;
     top: -616px;
-    margin-left: -216px;
+    margin-left: -252px;
   }
 }
-section#product .bgu {
-  background-image: url(../images/video-bg-update.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
-  position: absolute;
-  top: -288px;
-  left: 50%;
-  width: 1920px;
-  height: 816px;
-  transform: translate(-50%, 0);
-}
-@media only screen and (max-width: 1100px) {
-  section#product .bgu {
-    width: 1100px;
-    background-size: 1500px;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  section#product .bgu {
-    top: -200px;
-  }
-}
-@media only screen and (max-width: 750px) {
-  section#product .bgu {
-    background-image: url(../images/video-bg-update-mb.png);
-    width: 100%;
-    background-size: 100%;
-    top: -168px;
+@media only screen and (max-width: 500px) {
+  section#product .character {
+    margin-left: -204px;
   }
 }
 section#product .i03, section#product .i04, section#product .i05 {
@@ -953,7 +1119,8 @@ section#product .i05 {
 section#product [class^=main] {
   width: 1350px;
   margin: 0 auto;
-  padding: 160px 0;
+  margin-top: -200px;
+  padding-bottom: 160px;
 }
 @media only screen and (max-width: 1400px) {
   section#product [class^=main] {
@@ -963,13 +1130,12 @@ section#product [class^=main] {
 @media only screen and (max-width: 1100px) {
   section#product [class^=main] {
     width: 100%;
-    padding-bottom: 0;
+    margin-top: -108px;
   }
 }
 @media only screen and (max-width: 750px) {
   section#product [class^=main] {
-    padding: 0;
-    padding-bottom: 20px;
+    margin-top: -48px;
   }
 }
 section#product [class^=main] .title {
@@ -1805,6 +1971,7 @@ section#product [class^=main] [class^=item_box] .dots [class^=dot].active.dot07 
   border-width: 0px 3px 3px 0;
 }
 section#product [class^=main].main02 {
+  margin-top: 0;
   padding-bottom: 600px;
 }
 @media only screen and (max-width: 750px) {
