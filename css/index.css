@@ -1674,6 +1674,11 @@ section#product [class^=main] [class^=item_box] .items [class^=item] .info_box .
   transform: translate(-60%, -50%);
   width: 100%;
 }
+section#product [class^=main] [class^=item_box] .main-character {
+  background-image: url(../images/product_main01_character.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 section#product [class^=main] [class^=item_box] .dots {
   text-align: center;
   position: relative;
