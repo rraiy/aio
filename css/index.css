@@ -976,8 +976,8 @@ section#product {
 @media only screen and (max-width: 750px) {
   section#product {
     background-image: url(../images/footer_bg_m.png);
-    background-position: center calc(100% - 80px);
-    background-size: 900px;
+    background-position: center bottom;
+    background-size: 1000px;
     padding-top: 176px;
   }
 }
@@ -1123,8 +1123,27 @@ section#product .guarantee {
   align-items: center;
   padding-bottom: 600px;
 }
+@media only screen and (max-width: 1000px) {
+  section#product .guarantee {
+    width: 95%;
+    margin: 0 auto;
+  }
+  section#product .guarantee .content {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  section#product .guarantee {
+    padding-bottom: 300px;
+  }
+}
 section#product .guarantee .title {
   margin-bottom: 24px;
+}
+@media only screen and (max-width: 750px) {
+  section#product .guarantee .title {
+    width: 200px;
+  }
 }
 section#product [class^=main] {
   width: 1350px;
@@ -1970,9 +1989,14 @@ section#product [class^=main].main02 {
   margin-top: 0;
   padding-bottom: 100px;
 }
+@media only screen and (max-width: 1000px) {
+  section#product [class^=main].main02 {
+    padding-bottom: 180px;
+  }
+}
 @media only screen and (max-width: 750px) {
   section#product [class^=main].main02 {
-    padding-bottom: 350px;
+    padding-bottom: 80px;
   }
 }
 @media only screen and (max-width: 1000px) {

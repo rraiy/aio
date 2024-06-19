@@ -676,8 +676,8 @@ section#product
         padding-top: 200px
     +rwd(750px)
         background-image: url(../images/footer_bg_m.png)
-        background-position: center calc(100% - 80px)
-        background-size: 900px
+        background-position: center bottom
+        background-size: 1000px
         padding-top: 176px
     .character
         width: 260px
@@ -780,8 +780,16 @@ section#product
         align-items: center
         padding-bottom: 600px
         +rwd(1000px)
+            width: 95%
+            margin: 0 auto
+            .content 
+                width: 100%
+        +rwd(750px)
+            padding-bottom: 300px
         .title 
             margin-bottom: 24px
+            +rwd(750px)
+                width: 200px
     [class^="main"]
         width: 1350px
         margin: 0 auto
@@ -1421,8 +1429,10 @@ section#product
         &.main02
             margin-top: 0
             padding-bottom: 100px
+            +rwd(1000px)
+                padding-bottom: 180px
             +rwd(750px)
-                padding-bottom: 350px
+                padding-bottom: 80px
             .item_box .items [class^="item"]
                 +rwd(1000px)
                     height: 729px
