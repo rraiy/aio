@@ -889,6 +889,7 @@ section#product
             z-index: 1
             margin-top: 30px
             .items
+                height: 500px
                 +rwd(1000px)
                     height: 663px
                 +rwd(750px)
@@ -915,11 +916,6 @@ section#product
                         content: ""
                         display: block
                         clear: both
-                    .main-character
-                        position: absolute
-                        background-image: url(../images/product_main01_character.png)
-                        background-repeat: no-repeat
-                        background-size: contain   
                     .i01
                         width: 1574px
                         height: 710px
@@ -1040,7 +1036,7 @@ section#product
                             display: none
                         img
                             width: 100%
-                        .product02
+                        .product04
                             background-repeat: no-repeat
                             background-size: contain
                             background-position: top
@@ -1176,7 +1172,7 @@ section#product
                 text-align: center
                 position: relative
                 z-index: 4
-                margin-top: 80px
+                margin-top: 140px
                 +rwd(1000px)
                     display: none
                 [class^="dot"]
@@ -1281,6 +1277,23 @@ section#product
                     &.dot04
                         .bg
                             background-image: url(../images/product_dot04.png)
+                        .img
+                            .product04
+                                background-repeat: no-repeat
+                                background-size: contain
+                                background-position: top
+                                width: 195.2px
+                                height: 263px
+                                position: relative
+                                &::after
+                                    content: ""
+                                    position: absolute
+                                    bottom: 0px
+                                    right: -25px
+                                    width: 94px
+                                    height: 89px
+                                    background: url(../images/new.png) no-repeat center/contain
+                                    transform: rotate(45deg)
                         .name
                             p
                                 color: #e60012

@@ -1283,6 +1283,9 @@ section#product [class^=main] [class^=item_box] {
   z-index: 1;
   margin-top: 30px;
 }
+section#product [class^=main] [class^=item_box] .items {
+  height: 500px;
+}
 @media only screen and (max-width: 1000px) {
   section#product [class^=main] [class^=item_box] .items {
     height: 663px;
@@ -1323,12 +1326,6 @@ section#product [class^=main] [class^=item_box] .items [class^=item]::after {
   content: "";
   display: block;
   clear: both;
-}
-section#product [class^=main] [class^=item_box] .items [class^=item] .main-character {
-  position: absolute;
-  background-image: url(../images/product_main01_character.png);
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 section#product [class^=main] [class^=item_box] .items [class^=item] .i01 {
   width: 1574px;
@@ -1502,7 +1499,7 @@ section#product [class^=main] [class^=item_box] .items [class^=item] .img {
 section#product [class^=main] [class^=item_box] .items [class^=item] .img img {
   width: 100%;
 }
-section#product [class^=main] [class^=item_box] .items [class^=item] .img .product02 {
+section#product [class^=main] [class^=item_box] .items [class^=item] .img .product04 {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
@@ -1511,12 +1508,12 @@ section#product [class^=main] [class^=item_box] .items [class^=item] .img .produ
   position: relative;
 }
 @media only screen and (max-width: 1400px) {
-  section#product [class^=main] [class^=item_box] .items [class^=item] .img .product02 {
+  section#product [class^=main] [class^=item_box] .items [class^=item] .img .product04 {
     width: 340px;
     height: 408px;
   }
 }
-section#product [class^=main] [class^=item_box] .items [class^=item] .img .product02::after {
+section#product [class^=main] [class^=item_box] .items [class^=item] .img .product04::after {
   content: "";
   position: absolute;
   z-index: 10;
@@ -1684,7 +1681,7 @@ section#product [class^=main] [class^=item_box] .dots {
   text-align: center;
   position: relative;
   z-index: 4;
-  margin-top: 80px;
+  margin-top: 140px;
 }
 @media only screen and (max-width: 1000px) {
   section#product [class^=main] [class^=item_box] .dots {
@@ -1805,6 +1802,24 @@ section#product [class^=main] [class^=item_box] .dots [class^=dot].dot03 .name .
 }
 section#product [class^=main] [class^=item_box] .dots [class^=dot].dot04 .bg {
   background-image: url(../images/product_dot04.png);
+}
+section#product [class^=main] [class^=item_box] .dots [class^=dot].dot04 .img .product04 {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  width: 195.2px;
+  height: 263px;
+  position: relative;
+}
+section#product [class^=main] [class^=item_box] .dots [class^=dot].dot04 .img .product04::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: -25px;
+  width: 94px;
+  height: 89px;
+  background: url(../images/new.png) no-repeat center/contain;
+  transform: rotate(45deg);
 }
 section#product [class^=main] [class^=item_box] .dots [class^=dot].dot04 .name p {
   color: #e60012;
