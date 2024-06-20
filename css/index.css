@@ -21,14 +21,14 @@ section#kv {
     max-height: 880px;
   }
 }
-@media only screen and (max-height: 900px) {
-  section#kv {
-    max-height: 630px;
-  }
-}
 @media only screen and (max-width: 1200px) {
   section#kv {
     max-height: 800px;
+  }
+}
+@media only screen and (max-height: 900px) {
+  section#kv {
+    max-height: 630px;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -45,14 +45,14 @@ section#kv {
 }
 section#kv .bgb {
   position: absolute;
-  z-index: 3;
+  z-index: 5;
   width: 100%;
   height: 670px;
   background-image: url(../images/kv_mask.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  bottom: -16px;
+  bottom: 0;
   left: 50%;
   margin-left: -50%;
 }
@@ -63,33 +63,31 @@ section#kv .bgb {
     margin-left: -998px;
   }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1400px) {
   section#kv .bgb {
-    bottom: -24px;
+    margin-left: -950px;
   }
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 1000px) {
   section#kv .bgb {
     width: 1100px;
     height: 265px;
     margin-left: -550px;
-    background-size: contain;
   }
 }
 @media only screen and (max-width: 750px) {
   section#kv .bgb {
-    background-image: url(../images/kv_mask_m.png);
     width: 840px;
-    height: 225px;
-    bottom: -112px;
+    height: 300px;
     margin-left: -410px;
   }
 }
 @media only screen and (max-width: 450px) {
   section#kv .bgb {
-    height: 270px;
+    background-image: url(../images/kv_mask_m.png);
+    height: 200px;
     margin-left: -430px;
-    bottom: -130px;
+    bottom: -56px;
   }
 }
 section#kv .img00 {
@@ -114,7 +112,6 @@ section#kv .img00 {
 @media only screen and (max-width: 1200px) {
   section#kv .img00 {
     margin-bottom: 35px;
-    margin-left: -312px;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -127,10 +124,15 @@ section#kv .img00 {
 @media only screen and (max-width: 750px) {
   section#kv .img00 {
     background-image: url(../images/kv_img00-m.png);
-    width: 95%;
+    width: 358px;
     height: auto;
-    margin-left: -192px;
-    top: 72px;
+    margin-left: -180px;
+    top: 124px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  section#kv .img00 {
+    top: 102px;
   }
 }
 section#kv .img01 {
@@ -145,18 +147,18 @@ section#kv .img01 {
   bottom: 88px;
   margin-left: -608px;
 }
-@media only screen and (max-height: 900px) {
-  section#kv .img01 {
-    width: 316px;
-    bottom: -12px;
-    margin-left: -440px;
-  }
-}
 @media only screen and (max-width: 1200px) {
   section#kv .img01 {
     width: 356px;
     bottom: 16px;
     margin-left: -512px;
+  }
+}
+@media only screen and (max-height: 900px) {
+  section#kv .img01 {
+    width: 316px;
+    bottom: -24px;
+    margin-left: -440px;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -169,10 +171,10 @@ section#kv .img01 {
 @media only screen and (max-width: 750px) {
   section#kv .img01 {
     background-image: url(../images/kv_img01-m.png);
-    width: 156px;
-    height: 304px;
-    bottom: 124px;
-    margin-left: -202px;
+    width: 172px;
+    height: 122px;
+    bottom: 312px;
+    margin-left: -180px;
   }
 }
 section#kv .img01-1 {
@@ -180,56 +182,54 @@ section#kv .img01-1 {
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  z-index: 5;
+  z-index: 6;
 }
 @media only screen and (max-width: 750px) {
   section#kv .img01-1 {
     display: block;
     background-image: url(../images/kv_img01-1-m.png);
-    width: 192px;
-    height: 160px;
-    bottom: -50px;
-    left: 24px;
+    width: 145px;
+    height: 100px;
+    bottom: 56px;
+    left: 16px;
   }
 }
 section#kv .img02-1 {
   background-image: url(../images/kv_img02-1.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 228px;
-  height: 172px;
+  width: 324px;
+  height: 272px;
   position: absolute;
-  z-index: 5;
+  z-index: 4;
   right: 50%;
   bottom: 240px;
   margin-right: -616px;
 }
-@media only screen and (max-height: 900px) {
-  section#kv .img02-1 {
-    height: 148px;
-    bottom: 192px;
-    margin-right: -544px;
-  }
-}
 @media only screen and (max-width: 1200px) {
   section#kv .img02-1 {
-    width: 168px;
     bottom: 180px;
     margin-right: -536px;
   }
 }
+@media only screen and (max-height: 900px) {
+  section#kv .img02-1 {
+    bottom: 108px;
+    margin-right: -596px;
+  }
+}
 @media only screen and (max-width: 1000px) {
   section#kv .img02-1 {
-    width: 100px;
-    bottom: 64px;
-    margin-right: -350px;
+    width: 188px;
+    bottom: 28px;
+    margin-right: -432px;
   }
 }
 @media only screen and (max-width: 750px) {
   section#kv .img02-1 {
-    max-width: 173px;
-    bottom: -25px;
-    margin-right: -168px;
+    width: 178px;
+    bottom: -70px;
+    margin-right: -192px;
   }
 }
 section#kv .img02-2 {
@@ -244,13 +244,6 @@ section#kv .img02-2 {
   bottom: 116px;
   margin-right: -876px;
 }
-@media only screen and (max-height: 900px) {
-  section#kv .img02-2 {
-    height: 484px;
-    bottom: 132px;
-    margin-right: -807px;
-  }
-}
 @media only screen and (max-width: 1200px) {
   section#kv .img02-2 {
     width: 456px;
@@ -258,19 +251,26 @@ section#kv .img02-2 {
     margin-right: -872px;
   }
 }
+@media only screen and (max-height: 900px) {
+  section#kv .img02-2 {
+    height: 556px;
+    bottom: 124px;
+    margin-right: -812px;
+  }
+}
 @media only screen and (max-width: 1000px) {
   section#kv .img02-2 {
-    width: 254px;
-    bottom: -198px;
-    margin-right: -527px;
+    width: 246px;
+    bottom: 65px;
+    margin-right: -552px;
   }
 }
 @media only screen and (max-width: 750px) {
   section#kv .img02-2 {
-    width: 160px;
-    height: 279px;
+    width: 136px;
+    height: 296px;
     bottom: 0px;
-    margin-right: -241px;
+    margin-right: -212px;
     transform: rotate(8deg);
   }
 }
@@ -286,20 +286,20 @@ section#kv .img02-3 {
   bottom: -44px;
   margin-right: -920px;
 }
-@media only screen and (max-height: 900px) {
-  section#kv .img02-3 {
-    width: 617px;
-    height: 484px;
-    bottom: -152px;
-    margin-right: -728px;
-  }
-}
 @media only screen and (max-width: 1200px) {
   section#kv .img02-3 {
     width: 536px;
     bottom: -96px;
     margin-right: -780px;
     transform: rotate(-15deg);
+  }
+}
+@media only screen and (max-height: 900px) {
+  section#kv .img02-3 {
+    width: 617px;
+    height: 484px;
+    bottom: -152px;
+    margin-right: -728px;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -313,7 +313,7 @@ section#kv .img02-3 {
 @media only screen and (max-width: 750px) {
   section#kv .img02-3 {
     width: 335px;
-    bottom: -319px;
+    bottom: -286px;
     margin-right: -271px;
     transform: rotate(5deg);
   }
@@ -330,18 +330,18 @@ section#kv .img02 {
   bottom: 344px;
   margin-right: -489px;
 }
-@media only screen and (max-height: 900px) {
-  section#kv .img02 {
-    width: 312px;
-    bottom: 214px;
-    margin-right: -320px;
-  }
-}
 @media only screen and (max-width: 1200px) {
   section#kv .img02 {
     width: 400px;
     bottom: 242px;
     margin-right: -448px;
+  }
+}
+@media only screen and (max-height: 900px) {
+  section#kv .img02 {
+    width: 312px;
+    bottom: 214px;
+    margin-right: -320px;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -353,9 +353,9 @@ section#kv .img02 {
 }
 @media only screen and (max-width: 750px) {
   section#kv .img02 {
-    max-width: 171px;
-    bottom: 182px;
-    margin-right: -206px;
+    width: 150px;
+    bottom: 170px;
+    margin-right: -174px;
     z-index: 5;
   }
 }

@@ -50,7 +50,7 @@ input {
   cursor: pointer;
   right: 45px;
   bottom: 120px;
-  z-index: 5;
+  z-index: 10;
   cursor: pointer;
 }
 @media only screen and (max-height: 900px) {
