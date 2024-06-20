@@ -21,6 +21,11 @@ section#kv {
     max-height: 880px;
   }
 }
+@media only screen and (max-height: 900px) {
+  section#kv {
+    max-height: 630px;
+  }
+}
 @media only screen and (max-width: 1200px) {
   section#kv {
     max-height: 800px;
@@ -99,6 +104,13 @@ section#kv .img00 {
   margin-left: -332px;
   z-index: 1;
 }
+@media only screen and (max-height: 900px) {
+  section#kv .img00 {
+    height: 554px;
+    top: 68px;
+    margin-left: -240px;
+  }
+}
 @media only screen and (max-width: 1200px) {
   section#kv .img00 {
     margin-bottom: 35px;
@@ -132,6 +144,13 @@ section#kv .img01 {
   left: 50%;
   bottom: 88px;
   margin-left: -608px;
+}
+@media only screen and (max-height: 900px) {
+  section#kv .img01 {
+    width: 316px;
+    bottom: -12px;
+    margin-left: -440px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   section#kv .img01 {
@@ -185,6 +204,13 @@ section#kv .img02-1 {
   bottom: 240px;
   margin-right: -616px;
 }
+@media only screen and (max-height: 900px) {
+  section#kv .img02-1 {
+    height: 148px;
+    bottom: 192px;
+    margin-right: -544px;
+  }
+}
 @media only screen and (max-width: 1200px) {
   section#kv .img02-1 {
     width: 168px;
@@ -217,6 +243,13 @@ section#kv .img02-2 {
   right: 50%;
   bottom: 116px;
   margin-right: -876px;
+}
+@media only screen and (max-height: 900px) {
+  section#kv .img02-2 {
+    height: 484px;
+    bottom: 132px;
+    margin-right: -807px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   section#kv .img02-2 {
@@ -253,6 +286,14 @@ section#kv .img02-3 {
   bottom: -44px;
   margin-right: -920px;
 }
+@media only screen and (max-height: 900px) {
+  section#kv .img02-3 {
+    width: 617px;
+    height: 484px;
+    bottom: -152px;
+    margin-right: -728px;
+  }
+}
 @media only screen and (max-width: 1200px) {
   section#kv .img02-3 {
     width: 536px;
@@ -288,6 +329,13 @@ section#kv .img02 {
   right: 50%;
   bottom: 344px;
   margin-right: -489px;
+}
+@media only screen and (max-height: 900px) {
+  section#kv .img02 {
+    width: 312px;
+    bottom: 214px;
+    margin-right: -320px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   section#kv .img02 {
@@ -364,7 +412,7 @@ section#kv .cookies {
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 25px 35px;
-  z-index: 4;
+  z-index: 10;
 }
 @media only screen and (max-width: 1100px) {
   section#kv .cookies {
