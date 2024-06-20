@@ -1696,7 +1696,7 @@ section#product [class^=main] [class^=item_box] .items [class^=item] .info_box .
 }
 @media only screen and (max-width: 1400px) {
   section#product [class^=main] [class^=item_box] .items [class^=item] .info_box .links {
-    width: 100%;
+    width: 500px;
   }
 }
 section#product [class^=main] [class^=item_box] .items [class^=item] .info_box .links a {
@@ -1722,11 +1722,6 @@ section#product [class^=main] [class^=item_box] .items [class^=item] .info_box .
     height: 40px;
     margin-bottom: 10px;
     width: 120px;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  section#product [class^=main] [class^=item_box] .items [class^=item] .info_box .links a {
-    width: 200px;
   }
 }
 @media only screen and (max-width: 750px) {
