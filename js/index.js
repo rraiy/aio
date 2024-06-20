@@ -318,7 +318,7 @@ function set00(){
     TweenMax.set('section#kv .img02',{x:50,opacity:0});
     
     if($(window).width()<=1400){
-        TweenMax.set('section#kv .img02-2',{x:-400,y:-400,rotation:-60,opacity:0.5});
+        TweenMax.set('section#kv .img02-2',{x:300,y:-400,rotation:60,opacity:0.5});
     }else{
         TweenMax.set('section#kv .img02-2',{x:400,y:-400,rotation:30,opacity:0.5});
     }
@@ -344,9 +344,9 @@ function act01(){
     TweenMax.to('section#kv .img00',0.6,{y:0,opacity:1});
     TweenMax.to('section#kv .img01',0.6,{delay:0.4,x:0,opacity:1});
     TweenMax.to('section#kv .img02',0.6,{delay:0.4,x:0,opacity:1});
-    TweenMax.to('section#kv .img02-3',0.6,{delay:1.0,x:0,opacity:1});
-    TweenMax.to('section#kv .img02-2',0.6,{delay:1.6,x:0,y:0,rotation:0,opacity:1});
-    TweenMax.to('section#kv .img02-1',0.6,{delay: 2.2, y:0,opacity:1});
+    TweenMax.to('section#kv .img02-3',0.8,{delay:0.8,x:0,opacity:1});
+    TweenMax.to('section#kv .img02-2',0.8,{delay:1.2,x:0,y:0,rotation:0,opacity:1});
+    TweenMax.to('section#kv .img02-1',0.8,{delay: 1.6, y:0,opacity:1});
 
 }
 function act02(){

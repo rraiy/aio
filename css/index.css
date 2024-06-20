@@ -203,8 +203,8 @@ section#kv .img02-1 {
   position: absolute;
   z-index: 4;
   right: 50%;
-  bottom: 240px;
-  margin-right: -616px;
+  bottom: 124px;
+  margin-right: -668px;
 }
 @media only screen and (max-width: 1200px) {
   section#kv .img02-1 {
@@ -1721,12 +1721,17 @@ section#product [class^=main] [class^=item_box] .items [class^=item] .info_box .
     margin-right: 10px;
     height: 40px;
     margin-bottom: 10px;
-    width: calc(50% - 25px);
-    max-width: 200px;
+    width: 120px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  section#product [class^=main] [class^=item_box] .items [class^=item] .info_box .links a {
+    width: 200px;
   }
 }
 @media only screen and (max-width: 750px) {
   section#product [class^=main] [class^=item_box] .items [class^=item] .info_box .links a {
+    width: 160px;
     height: 36px;
   }
 }
@@ -2066,7 +2071,7 @@ section#product [class^=main].main02 .item_box .items [class^=item] .img {
 @media only screen and (max-width: 1400px) {
   section#product [class^=main].main02 .item_box .items [class^=item] .img {
     margin-top: 30px;
-    margin-right: 0px;
+    margin-right: -28px;
   }
 }
 section#product [class^=main].main02 .item_box .items [class^=item] .info_box {
@@ -2078,7 +2083,7 @@ section#product [class^=main].main02 .item_box .items [class^=item] .info_box {
 @media only screen and (max-width: 1400px) {
   section#product [class^=main].main02 .item_box .items [class^=item] .info_box {
     padding-left: 100px;
-    margin-left: 80px;
+    margin-left: 124px;
     padding-top: 10px;
   }
 }
