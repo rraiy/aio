@@ -100,18 +100,18 @@ var preloadImages = [
     "images/video_i02.png",
     "images/video_img01.png",
 ];
-queue.on("complete", function (event) {
-    sessionStorage.setItem('isLoad', 1);
-    $('header, footer, article').show();
-    $("img").each(function(){
-        $(this).prop('src',$(this).attr('ds'));
-    });
-    $('body,html').stop().animate({ scrollTop: "0" }, 10);
-    indexInit();
-    $('#loading').fadeOut(500,function(){
-        // $('#loading').remove();
-    });
-});
+// queue.on("complete", function (event) {
+//     sessionStorage.setItem('isLoad', 1);
+//     $('header, footer, article').show();
+//     $("img").each(function(){
+//         $(this).prop('src',$(this).attr('ds'));
+//     });
+//     $('body,html').stop().animate({ scrollTop: "0" }, 10);
+//     indexInit();
+//     $('#loading').fadeOut(500,function(){
+//         // $('#loading').remove();
+//     });
+// });
 queue.on("progress", function (event) {
     // $('.loading .loading_num').text(Math.round(event.progress * 100) + '%');
     if($(window).width()<=733){

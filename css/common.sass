@@ -309,7 +309,8 @@ footer
 	z-index: 100
 	top: 0
 	left: 0
-	// display: none
+	+rwd(750px)
+	background-image: url(../images/loading_bg-m.png)
 	.b
 		background-image: url(../images/loading_img02.png)
 		background-repeat: no-repeat
@@ -319,31 +320,30 @@ footer
 		bottom: 0
 		left: 50%
 		width: 110%
-		height: 540px
+		height: 614px
 		margin-left: -55%
 		+rwd(1920px)
 			background-size: contain
 			width: 1980px
 			margin-left: -990px
-			height: 480px
+			height: 614px
 		+rwd3()
 			width: 1500px
 			margin-left: -750px
-			height: 350px
+			height: 460px
 		+rwd(1000px)
 			width: 1200px
 			margin-left: -600px
-			height: 290px
+			height: 320px
 		+rwd(750px)
 			background-image: url(../images/loading_img02_m.png)
 			width: 807px
 			margin-left: -403px
-			height: 527px
+			height: 480px
 		+rwd(500px)
 			width: 500px
 			margin-left: -250px
 			height: 310px
-			border-bottom: 10px solid #fff
 	.main
 		position: absolute
 		top: 50%
