@@ -208,8 +208,8 @@ section#kv .img02-1 {
 }
 @media only screen and (max-width: 1200px) {
   section#kv .img02-1 {
-    bottom: 180px;
-    margin-right: -536px;
+    bottom: 116px;
+    margin-right: -620px;
   }
 }
 @media only screen and (max-height: 900px) {
@@ -261,7 +261,7 @@ section#kv .img02-2 {
 @media only screen and (max-width: 1000px) {
   section#kv .img02-2 {
     width: 246px;
-    bottom: 65px;
+    bottom: -212px;
     margin-right: -552px;
   }
 }
