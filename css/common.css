@@ -466,7 +466,6 @@ footer p a {
 }
 @media only screen and (max-width: 1920px) {
   #loading .b {
-    background-size: contain;
     width: 1980px;
     margin-left: -990px;
     height: 614px;
@@ -474,13 +473,14 @@ footer p a {
 }
 @media only screen and (max-height: 900px) {
   #loading .b {
-    width: 1500px;
-    margin-left: -750px;
+    width: 1600px;
+    margin-left: -800px;
     height: 460px;
   }
 }
 @media only screen and (max-width: 1000px) {
   #loading .b {
+    background-size: contain;
     width: 1200px;
     margin-left: -600px;
     height: 320px;
