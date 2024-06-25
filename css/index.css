@@ -1415,7 +1415,7 @@ section#product [class^=main] [class^=item_box] .items [class^=item] .i01 {
   z-index: 3;
   left: 50%;
   top: -130px;
-  margin-left: -840px;
+  margin-left: -828px;
 }
 @media only screen and (max-width: 1400px) {
   section#product [class^=main] [class^=item_box] .items [class^=item] .i01 {
@@ -1450,7 +1450,7 @@ section#product [class^=main] [class^=item_box] .items [class^=item] .i02 {
   position: absolute;
   z-index: 3;
   left: 50%;
-  top: -264px;
+  top: -234px;
   margin-left: -812px;
 }
 @media only screen and (max-width: 1400px) {
