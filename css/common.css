@@ -612,11 +612,6 @@ footer p a {
     width: calc(100% - 40px);
   }
 }
-@media only screen and (max-height: 900px) {
-  .video_pp .main {
-    width: 550px;
-  }
-}
 @media only screen and (max-width: 500px) {
   .video_pp .main {
     width: calc(100% - 40px);
@@ -668,12 +663,6 @@ footer p a {
     width: calc(100% - 40px);
     max-width: 100%;
     margin: 0 auto;
-  }
-}
-@media only screen and (max-height: 900px) {
-  .video_pp .main iframe {
-    width: 500px;
-    height: 300px;
   }
 }
 @media only screen and (max-width: 500px) {

@@ -650,10 +650,15 @@ section#video
             box-sizing: border-box
             padding-left: 20px
             padding-right: 20px
+        +rwd(750px)
+            padding-left: 0px
+            padding-right: 0px
         .video01
             display: inline-block
             vertical-align: top
             cursor: pointer
+            +rwd(750px)
+                width: 98%
             .img
                 width: 606px
                 margin-bottom: 20px
@@ -662,6 +667,8 @@ section#video
                     width: 420px
                 +rwd(1000px)
                     width: 100%
+                +rwd(750px)
+                    display: none
                 img
                     width: 100%
                 .play
@@ -684,6 +691,19 @@ section#video
                     font-size: 30px
                 +rwd(750px)
                     font-size: 20px
+        .mobile_video01
+            display: none
+            +rwd(750px)
+                display: flex
+                position: relative
+                padding-bottom: 56.25%
+                height: 0
+                iframe
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
 
 section#product
     position: relative
@@ -908,7 +928,7 @@ section#product
                 filter: blur(2px)
                 position: relative
                 img
-                    width: 100%
+                    width: 98%
                 .new
                     position: absolute
                     top: -25px
@@ -1085,8 +1105,8 @@ section#product
                             background-repeat: no-repeat
                             background-size: contain
                             background-position: top
-                            width: 379px
-                            height: 455px
+                            width: 408px
+                            height: 484px
                             position: relative
                             +rwd(1400px)
                                 width: 340px

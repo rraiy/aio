@@ -944,10 +944,21 @@ section#video .inner {
     padding-right: 20px;
   }
 }
+@media only screen and (max-width: 750px) {
+  section#video .inner {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
 section#video .inner .video01 {
   display: inline-block;
   vertical-align: top;
   cursor: pointer;
+}
+@media only screen and (max-width: 750px) {
+  section#video .inner .video01 {
+    width: 98%;
+  }
 }
 section#video .inner .video01 .img {
   width: 606px;
@@ -962,6 +973,11 @@ section#video .inner .video01 .img {
 @media only screen and (max-width: 1000px) {
   section#video .inner .video01 .img {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  section#video .inner .video01 .img {
+    display: none;
   }
 }
 section#video .inner .video01 .img img {
@@ -996,6 +1012,24 @@ section#video .inner .video01 p {
 @media only screen and (max-width: 750px) {
   section#video .inner .video01 p {
     font-size: 20px;
+  }
+}
+section#video .inner .mobile_video01 {
+  display: none;
+}
+@media only screen and (max-width: 750px) {
+  section#video .inner .mobile_video01 {
+    display: flex;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+  }
+  section#video .inner .mobile_video01 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -1331,7 +1365,7 @@ section#product [class^=main] .m_dot_box [class^=m_dot] {
   position: relative;
 }
 section#product [class^=main] .m_dot_box [class^=m_dot] img {
-  width: 100%;
+  width: 98%;
 }
 section#product [class^=main] .m_dot_box [class^=m_dot] .new {
   position: absolute;
@@ -1582,8 +1616,8 @@ section#product [class^=main] [class^=item_box] .items [class^=item] .img .produ
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
-  width: 379px;
-  height: 455px;
+  width: 408px;
+  height: 484px;
   position: relative;
 }
 @media only screen and (max-width: 1400px) {
