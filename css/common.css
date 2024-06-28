@@ -26,7 +26,8 @@ a img {
   border: none;
 }
 
-ul, li {
+ul,
+li {
   list-style-type: none;
 }
 
@@ -78,13 +79,15 @@ input {
   }
 }
 
-header, footer, article {
+header,
+footer,
+article {
   display: none;
 }
 
 header {
   position: absolute;
-  z-index: 6;
+  z-index: 7;
   width: 100%;
   height: 57px;
   background-color: #132742;
@@ -218,15 +221,17 @@ header .inner nav ul li {
     margin: 0 0 20px;
   }
 }
-header .inner nav ul li p, header .inner nav ul li a {
+header .inner nav ul li p,
+header .inner nav ul li a {
   font-size: 18px;
   color: rgba(255, 255, 255, 0.5);
   transition: 0.5s;
 }
 @media only screen and (max-width: 1100px) {
-  header .inner nav ul li p, header .inner nav ul li a {
+  header .inner nav ul li p,
+  header .inner nav ul li a {
     font-size: 16px;
-    color: #FFF;
+    color: #fff;
   }
 }
 header .inner nav ul li.museum {
@@ -252,13 +257,15 @@ header .inner nav ul li:after {
   }
 }
 @media only screen and (min-width: 751px) {
-  header .inner nav ul li:hover p, header .inner nav ul li:hover a {
+  header .inner nav ul li:hover p,
+  header .inner nav ul li:hover a {
     color: rgb(255, 255, 255);
   }
 }
 @media only screen and (min-width: 751px) and (max-width: 1100px) {
-  header .inner nav ul li:hover p, header .inner nav ul li:hover a {
-    color: #FFF;
+  header .inner nav ul li:hover p,
+  header .inner nav ul li:hover a {
+    color: #fff;
   }
 }
 @media only screen and (min-width: 751px) {
@@ -315,7 +322,7 @@ header .inner nav .social a.cart {
 }
 @media only screen and (min-width: 751px) {
   header .inner nav .social a:hover {
-    background-color: #FFF;
+    background-color: #fff;
   }
   header .inner nav .social a:hover.fb {
     background-image: url(../images/icon_fb_h.png);
@@ -366,7 +373,7 @@ header .inner nav a.museum:after {
 }
 @media only screen and (min-width: 751px) and (max-width: 1100px) {
   header .inner nav a.museum:hover {
-    color: #FFF;
+    color: #fff;
   }
 }
 @media only screen and (min-width: 751px) {
@@ -384,7 +391,7 @@ header .inner nav a.museum:after {
   header .inner nav a.museum {
     display: block;
     font-size: 16px;
-    color: #FFF;
+    color: #fff;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
@@ -424,7 +431,7 @@ footer p {
   }
 }
 footer p a {
-  color: #FFF;
+  color: #fff;
   font-size: 18px;
   font-weight: 300;
 }
@@ -556,7 +563,7 @@ footer p a {
   width: 500px;
   height: 30px;
   box-sizing: border-box;
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 30px;
   margin: 0px auto;
   position: relative;
@@ -670,4 +677,4 @@ footer p a {
     width: calc(100% - 40px);
     height: 200px;
   }
-}/*# sourceMappingURL=common.css.map */
+} /*# sourceMappingURL=common.css.map */
